@@ -1,0 +1,174 @@
+/* global */
+
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+    background-color: rgb(206, 6, 43);
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+}
+
+footer{
+	background-color: rgb(206, 6, 43);
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+footer p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+nav{
+	margin: 0px;
+	padding: 0 10%;
+	background-color: rgb(206, 6, 43);
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li a{
+	flex-grow: 1;
+	padding: 25px;
+	font-size: 1em;
+	font-family: "Calibri","Open Sans",sans-serif;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: #000000;
+	background-color: #C8C8C8;
+}
+
+main{
+	min-height: 570px;
+	display: flex;
+	flex-direction: column;
+}
+
+main p{
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+main div{
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+/* bonjour | chronometre */
+
+button[type="button"] {
+	height: 50px;
+	width: 150px;
+	margin: 0 10px;
+}
+
+#btnBonjour{
+	visibility: hidden;
+}
+
+/* chronometre */
+#head{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#chronometre{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#lapsDiv{
+	flex-direction: column;
+}
+
+#laps{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/* pendu */
+
+#hiddenWord{
+	font-family: monospace;
+	font-size: 3em;
+	text-align: center;
+}
+
+#alphabet{
+	display: flex;
+	flex-direction: row;
+}
+
+#alphabet td button{
+	background-color: #C8C8C8;
+	color: #000000;
+	border-radius: 3px;
+	border: #A0A0A0 solid 1px;
+	font-size: 1.5em;
+	font-family: monospace;
+}
+
+#alphabet td button:disabled{
+	color: #A0A0A0;
+}
+
+#results p{
+	text-decoration: underline;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 3em;
+	display: none;
+	text-align: center;
+}
+
+#resultWin{
+	color: #009655;
+}
+
+#resultLoose{
+	color: #D43C1E;
+}
+
+#errorList li{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	list-style-type: none;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>Démineur</title>
+     </head>
+     <body>
+        <header id="header">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-3">
+                    <img class="bomb-cs-go" src="assets/capture/bombHeader.png" alt="cs-go-Bombe">
+                </div>
+                <div class="col-1">
+                    <h1>Démineur</h1>
+                </div>
+                <div class="col-3">
+                    <img class="bomb-cs-go" src="assets/capture/bombHeader.png" alt="cs-go-Bombe">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../fibonacci.html">Fibonacci</a></li>
+                    <li><a href="../de.html">Dé</a></li>
+                    <li><a href="../race.html">Race</a></li>
+                    <li><a href="../bonjour.html">Bonjour</a></li>
+                    <li><a href="../chrono.html">Chronomètre</a></li>
+                    <li><a href="../pendu.html">Pendu</a></li>
+                    <li><a href="index.html">Démineur</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div id="selectLevel">
+                <select id="selectorLevel" required>
+                    <option value="easy">Facile</option>
+                    <option value="medium">Moyen</option>
+                    <option value="hard">Difficile</option>
+                    <option value="hardcore">Hardcore</option>
+                </select>
+            </div>
+            <div id="stats">
+                <span id="size"></span>
+                <span id="bombe"></span>
+                <span id="flag"></span>
+                <span id="timer"></span>
+            </div>
+            <div id="demineurContainer">
+                <div id="demineur">
+                    <table >
+                        <tbody id="grille" oncontextmenu="return false">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="results">
+                <p id="resultWin">Gagné !</p>
+                <p id="resultLose">Perdu !</p>
+            </div>
+            <div>
+                <input type="button" id="btnStart" value="Start"/>
+                
+                <h3>Comment jouer au démineur ?</h3>
+                <p>Le but du jeu est de découvrir toutes les cases vides sans faire exploser les bombes.</p> 
+                    <p>Le clic gauche permet de libérer une case et le clic droit permet de placer un drapeau.</p> 
+                <p>
+                    Le chiffre qui s'affiche sur une case permet de connaître le nombre de bombes sur un 
+                    côté adjacent, en haut, en bas, à gauche, à droite et en diagonale.
+                </p>
+            </div>
+        </main>
+            
+        <footer id="footer">
+            <p>Tous Droits réservés 2020</p>
+        </footer>
+     </body>
+     
+     <script type="text/javascript" src="assets/js/demineur.js"></script>
+</html>

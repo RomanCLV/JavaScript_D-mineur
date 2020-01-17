@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Halla'din - Chrono</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fibonacci.html">Fibonacci</a></li>
+                    <li><a href="de.html">Dé</a></li>
+                    <li><a href="race.html">Race</a></li>
+                    <li><a href="bonjour.html">Bonjour</a></li>
+                    <li><a href="chrono.html">Chronomètre</a></li>
+                    <li><a href="pendu.html">Pendu</a></li>
+                    <li><a href="demineur/index.html">Démineur</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <p id="chronometre">00:00.000</p>
+            </div>
+            <div>
+                <button type="button" id="btnStart" onclick="start()">Start</button>
+                <button type="button" id="btnStop"  onclick="stop()">Stop</button>
+                <button type="button" id="btnReset" onclick="reset()">Reset</button>
+                <button type="button" id="btnLaps"  onclick="laps()">Laps</button>
+            </div>
+            
+            <div id="lapsDiv">
+                <p id="laps">Laps :</p>
+                <ol id="lapsTimes">
+                </ol>
+            </div>
+        </main>
+        <script src="./chrono.js" type="text/javascript"></script>
+        <footer>
+            <p>Developped by Roman CLAVIER</p>
+        </footer>
+    </body>
+</html>
